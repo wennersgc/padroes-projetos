@@ -7,11 +7,13 @@ public class SingletonLazy {
 
     private static SingletonLazy instancia;
 
-    SingletonLazy() {
+   private SingletonLazy() {
         super();
     }
 
     public static SingletonLazy getInstancia() {
-        return (instancia == null ? new SingletonLazy() : instancia);
+        return (instancia == null ?
+                instancia = new SingletonLazy()
+                : instancia);
     }
 }
