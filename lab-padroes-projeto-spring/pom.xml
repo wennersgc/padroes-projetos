@@ -15,6 +15,8 @@
 	<description>Exemplos de Padroes de Projetos em Spring</description>
 	<properties>
 		<java.version>11</java.version>
+		<openapi.version>1.5.2</openapi.version>
+		<spring-cloud.version>3.0.4</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -25,7 +27,21 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-ui</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.12.0</version>
+		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
